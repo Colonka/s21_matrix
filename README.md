@@ -1,6 +1,6 @@
 # s21_matrix
 
-Implementation of the s21_matrix.h library.
+Implementation of the s21_matrix.h library in C programming language.
 
 ## Introduction
 
