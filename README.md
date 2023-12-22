@@ -10,7 +10,7 @@ In this project I've implemented my own library for processing numerical matrice
 
 Include s21_matrix.h in your file and link libs21_matrix.a while compilation of your source files.
 
-`#include "<Directory where the header resides>/s21_math.h"`
+`#include "<Directory where the header resides>/s21_matrix.h"`
 
 `-L<Directory where the library resides> -l<library name>`
 
@@ -18,7 +18,7 @@ Include s21_matrix.h in your file and link libs21_matrix.a while compilation of 
 
 Being in s21_matrix/src folder run command `make` in terminal that create static library s21_matrix. Then include s21_matrix.h in your file and link libs21_matrix.a while compilation of your source files.
 
-`#include "<Directory where the header resides>/s21_math.h"`
+`#include "<Directory where the header resides>/s21_matrix.h"`
 
 `-L<Directory where the library resides> -l<library name>`
 
