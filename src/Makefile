@@ -34,14 +34,11 @@ test: clean s21_matrix.a test/test.c
 	$(CC) -L. -ls21_matrix binary/test.o $(GCOV_FLAGS) $(CHECK_FLAGS) -o run_tests
 	./run_tests
 
-gcovr_report_build: test
-	mkdir report
+gcovr_report: test
+	mkdir -p report
 	./run_tests
 	gcov -f *.gcno
 	gcovr -r. --html --html-details -o report/report.html
-	open report/report.html
-
-gcovr_report: 
 	open report/report.html
 
 dvi: clean
