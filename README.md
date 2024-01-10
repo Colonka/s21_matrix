@@ -34,7 +34,7 @@ Being in s21_matrix/src folder run command `make gcovr_report`
 
 ## Documentation
 
-To open library documentation run command `make docs` in terminal being in s21_matrix/src folder.
+To open library documentation run command `make dvi` in terminal being in s21_matrix/src folder.
 
 ### Matrix structure in C language:
 

@@ -47,9 +47,6 @@ dvi: clean
 	mv html latex docs
 	open docs/html/index.html
 
-docs:
-	open docs/html/index.html
-
 git: clean_for_git
 	git add -A
 	git commit -m "$m"
