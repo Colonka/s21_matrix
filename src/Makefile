@@ -53,7 +53,7 @@ git: clean_for_git
 	git push origin "$b"
 
 clean:
-	rm -rf *.o *.gcov *.gcda *.gcno binary run_tests docs
+	rm -rf *.o *.gcov *.gcda *.gcno binary run_tests
 
 clean_for_git:
-	rm -rf run_tests binary
+	rm -rf run_tests binary docs
