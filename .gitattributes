@@ -1,4 +1,4 @@
 *.html linguist-language=C
-*.Tex linguist-language=C
-*.CSS linguist-language=C
-*.JavaScript linguist-language=C
+*.tex linguist-language=C
+*.css linguist-language=C
+*.js linguist-language=C
