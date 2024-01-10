@@ -1,0 +1,390 @@
+\doxysection{source/s21\+\_\+matrix.h File Reference}
+\hypertarget{s21__matrix_8h}{}\label{s21__matrix_8h}\index{source/s21\_matrix.h@{source/s21\_matrix.h}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmatrix__struct}{matrix\+\_\+struct}}
+\begin{DoxyCompactList}\small\item\em matrix info \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{s21__matrix_8h_aa90cac659d18e8ef6294c7ae337f6b58}{SUCCESS}}~0
+\item 
+\#define \mbox{\hyperlink{s21__matrix_8h_a6d58f9ac447476b4e084d7ca383f5183}{FAILURE}}~1
+\item 
+\#define \mbox{\hyperlink{s21__matrix_8h_aba51915c87d64af47fb1cc59348961c9}{OK}}~0
+\item 
+\#define \mbox{\hyperlink{s21__matrix_8h_af9303b43f4397142f759eb2e5409c22c}{INCORRECT\+\_\+\+MATRIX}}~1
+\item 
+\#define \mbox{\hyperlink{s21__matrix_8h_ae44b769e65e8636cd0ab8d42e721854b}{CALCULATION\+\_\+\+ERROR}}~2
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structmatrix__struct}{matrix\+\_\+struct}} \mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em matrix info \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{s21__matrix_8h_a10531e9a3f02ea220a86bdc4ea281232}{alloc\+\_\+matrix}} (\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Matrix allocation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__matrix_8h_a32320a28583ccc0668464c48f7770b22}{check\+\_\+matrix}} (\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}A)
+\begin{DoxyCompactList}\small\item\em Matrix allocation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__matrix_8h_abe186ff7588161fd6d052f9e8300303b}{create\+\_\+minor\+\_\+matrix}} (\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}A, \mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}minor, int row, int column)
+\begin{DoxyCompactList}\small\item\em Minor matrix creating. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__matrix_8h_a59fdb6ff4aeb96dc381c8f8986af2bd4}{s21\+\_\+create\+\_\+matrix}} (int rows, int columns, \mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Matrix creating. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__matrix_8h_aad8337ad12e6dae5bdbbaf1d3b35e140}{s21\+\_\+remove\+\_\+matrix}} (\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}A)
+\begin{DoxyCompactList}\small\item\em Matrix removing. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__matrix_8h_a63bcd0d51a932d940a62b7356b69bfe7}{s21\+\_\+eq\+\_\+matrix}} (\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}A, \mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}B)
+\begin{DoxyCompactList}\small\item\em Matrix comparison. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__matrix_8h_aaa350889d1c45b3b8bb269f9c37e94e7}{s21\+\_\+sum\+\_\+matrix}} (\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}A, \mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}B, \mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Add matrixs. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__matrix_8h_a1942072e4680db31e2854b071b00c3fc}{s21\+\_\+sub\+\_\+matrix}} (\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}A, \mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}B, \mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Matrixs substruction. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__matrix_8h_acd185705783880e5cc7c233329b9d7ef}{s21\+\_\+mult\+\_\+number}} (\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}A, double number, \mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Matrix multiplication on number. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__matrix_8h_a9c2c1fd5d9c5e189f0fb2851fd2a1ee3}{s21\+\_\+mult\+\_\+matrix}} (\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}A, \mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}B, \mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Matrix multiplication on matrix. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__matrix_8h_a4a5bbe0e14296f6ec7a91e57ac202ed2}{s21\+\_\+transpose}} (\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}A, \mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Matrix transpose. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__matrix_8h_aa58ca5c8b61e817e608e6820b7213195}{s21\+\_\+calc\+\_\+complements}} (\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}A, \mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Matrix calc\+\_\+comlements computing. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__matrix_8h_ad1aa328504824fe335a97917c33e41b6}{s21\+\_\+determinant}} (\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}A, double \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Matrix determinant computing. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__matrix_8h_acf36c0578df2e0b3a9e63fc8ad3b3276}{s21\+\_\+inverse\+\_\+matrix}} (\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}A, \mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Matrix inversing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{s21__matrix_8h_ae44b769e65e8636cd0ab8d42e721854b}\label{s21__matrix_8h_ae44b769e65e8636cd0ab8d42e721854b} 
+\index{s21\_matrix.h@{s21\_matrix.h}!CALCULATION\_ERROR@{CALCULATION\_ERROR}}
+\index{CALCULATION\_ERROR@{CALCULATION\_ERROR}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{CALCULATION\_ERROR}{CALCULATION\_ERROR}}
+{\footnotesize\ttfamily \#define CALCULATION\+\_\+\+ERROR~2}
+
+\Hypertarget{s21__matrix_8h_a6d58f9ac447476b4e084d7ca383f5183}\label{s21__matrix_8h_a6d58f9ac447476b4e084d7ca383f5183} 
+\index{s21\_matrix.h@{s21\_matrix.h}!FAILURE@{FAILURE}}
+\index{FAILURE@{FAILURE}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{FAILURE}{FAILURE}}
+{\footnotesize\ttfamily \#define FAILURE~1}
+
+\Hypertarget{s21__matrix_8h_af9303b43f4397142f759eb2e5409c22c}\label{s21__matrix_8h_af9303b43f4397142f759eb2e5409c22c} 
+\index{s21\_matrix.h@{s21\_matrix.h}!INCORRECT\_MATRIX@{INCORRECT\_MATRIX}}
+\index{INCORRECT\_MATRIX@{INCORRECT\_MATRIX}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{INCORRECT\_MATRIX}{INCORRECT\_MATRIX}}
+{\footnotesize\ttfamily \#define INCORRECT\+\_\+\+MATRIX~1}
+
+\Hypertarget{s21__matrix_8h_aba51915c87d64af47fb1cc59348961c9}\label{s21__matrix_8h_aba51915c87d64af47fb1cc59348961c9} 
+\index{s21\_matrix.h@{s21\_matrix.h}!OK@{OK}}
+\index{OK@{OK}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{OK}{OK}}
+{\footnotesize\ttfamily \#define OK~0}
+
+\Hypertarget{s21__matrix_8h_aa90cac659d18e8ef6294c7ae337f6b58}\label{s21__matrix_8h_aa90cac659d18e8ef6294c7ae337f6b58} 
+\index{s21\_matrix.h@{s21\_matrix.h}!SUCCESS@{SUCCESS}}
+\index{SUCCESS@{SUCCESS}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{SUCCESS}{SUCCESS}}
+{\footnotesize\ttfamily \#define SUCCESS~0}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}\label{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd} 
+\index{s21\_matrix.h@{s21\_matrix.h}!matrix\_t@{matrix\_t}}
+\index{matrix\_t@{matrix\_t}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{matrix\_t}{matrix\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structmatrix__struct}{matrix\+\_\+struct}} \mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}}}
+
+
+
+matrix info 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{s21__matrix_8h_a10531e9a3f02ea220a86bdc4ea281232}\label{s21__matrix_8h_a10531e9a3f02ea220a86bdc4ea281232} 
+\index{s21\_matrix.h@{s21\_matrix.h}!alloc\_matrix@{alloc\_matrix}}
+\index{alloc\_matrix@{alloc\_matrix}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{alloc\_matrix()}{alloc\_matrix()}}
+{\footnotesize\ttfamily int alloc\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})}
+
+
+
+Matrix allocation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & pointer to allocated matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 0 -\/ ok, 1 -\/ err 
+\end{DoxyReturn}
+\Hypertarget{s21__matrix_8h_a32320a28583ccc0668464c48f7770b22}\label{s21__matrix_8h_a32320a28583ccc0668464c48f7770b22} 
+\index{s21\_matrix.h@{s21\_matrix.h}!check\_matrix@{check\_matrix}}
+\index{check\_matrix@{check\_matrix}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{check\_matrix()}{check\_matrix()}}
+{\footnotesize\ttfamily int check\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{A }\end{DoxyParamCaption})}
+
+
+
+Matrix allocation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & pointer to checking matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 0 -\/ ok, 1 -\/ err 
+\end{DoxyReturn}
+\Hypertarget{s21__matrix_8h_abe186ff7588161fd6d052f9e8300303b}\label{s21__matrix_8h_abe186ff7588161fd6d052f9e8300303b} 
+\index{s21\_matrix.h@{s21\_matrix.h}!create\_minor\_matrix@{create\_minor\_matrix}}
+\index{create\_minor\_matrix@{create\_minor\_matrix}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{create\_minor\_matrix()}{create\_minor\_matrix()}}
+{\footnotesize\ttfamily void create\+\_\+minor\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{A,  }\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{minor,  }\item[{int}]{row,  }\item[{int}]{column }\end{DoxyParamCaption})}
+
+
+
+Minor matrix creating. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & pointer to source matrix \\
+\hline
+{\em minor} & pointer to minor matrix \\
+\hline
+{\em row} & deleting line number \\
+\hline
+{\em row} & deleting column number \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__matrix_8h_aa58ca5c8b61e817e608e6820b7213195}\label{s21__matrix_8h_aa58ca5c8b61e817e608e6820b7213195} 
+\index{s21\_matrix.h@{s21\_matrix.h}!s21\_calc\_complements@{s21\_calc\_complements}}
+\index{s21\_calc\_complements@{s21\_calc\_complements}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{s21\_calc\_complements()}{s21\_calc\_complements()}}
+{\footnotesize\ttfamily int s21\+\_\+calc\+\_\+complements (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{A,  }\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})}
+
+
+
+Matrix calc\+\_\+comlements computing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & pointer to matrix \\
+\hline
+{\em result} & pointer to matrix result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\Hypertarget{s21__matrix_8h_a59fdb6ff4aeb96dc381c8f8986af2bd4}\label{s21__matrix_8h_a59fdb6ff4aeb96dc381c8f8986af2bd4} 
+\index{s21\_matrix.h@{s21\_matrix.h}!s21\_create\_matrix@{s21\_create\_matrix}}
+\index{s21\_create\_matrix@{s21\_create\_matrix}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{s21\_create\_matrix()}{s21\_create\_matrix()}}
+{\footnotesize\ttfamily int s21\+\_\+create\+\_\+matrix (\begin{DoxyParamCaption}\item[{int}]{rows,  }\item[{int}]{columns,  }\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})}
+
+
+
+Matrix creating. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows} & rows number \\
+\hline
+{\em columns} & columns number \\
+\hline
+{\em result} & pointer to created matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 0 -\/ ok, 1 -\/ err 
+\end{DoxyReturn}
+\Hypertarget{s21__matrix_8h_ad1aa328504824fe335a97917c33e41b6}\label{s21__matrix_8h_ad1aa328504824fe335a97917c33e41b6} 
+\index{s21\_matrix.h@{s21\_matrix.h}!s21\_determinant@{s21\_determinant}}
+\index{s21\_determinant@{s21\_determinant}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{s21\_determinant()}{s21\_determinant()}}
+{\footnotesize\ttfamily int s21\+\_\+determinant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{A,  }\item[{double \texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})}
+
+
+
+Matrix determinant computing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & pointer to matrix \\
+\hline
+{\em result} & pointer to matrix result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\Hypertarget{s21__matrix_8h_a63bcd0d51a932d940a62b7356b69bfe7}\label{s21__matrix_8h_a63bcd0d51a932d940a62b7356b69bfe7} 
+\index{s21\_matrix.h@{s21\_matrix.h}!s21\_eq\_matrix@{s21\_eq\_matrix}}
+\index{s21\_eq\_matrix@{s21\_eq\_matrix}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{s21\_eq\_matrix()}{s21\_eq\_matrix()}}
+{\footnotesize\ttfamily int s21\+\_\+eq\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{A,  }\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{B }\end{DoxyParamCaption})}
+
+
+
+Matrix comparison. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & pointer to comparising matrix \\
+\hline
+{\em B} & pointer to comparising matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ is equal, 0 -\/ isn\textquotesingle{}t equal 
+\end{DoxyReturn}
+\Hypertarget{s21__matrix_8h_acf36c0578df2e0b3a9e63fc8ad3b3276}\label{s21__matrix_8h_acf36c0578df2e0b3a9e63fc8ad3b3276} 
+\index{s21\_matrix.h@{s21\_matrix.h}!s21\_inverse\_matrix@{s21\_inverse\_matrix}}
+\index{s21\_inverse\_matrix@{s21\_inverse\_matrix}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{s21\_inverse\_matrix()}{s21\_inverse\_matrix()}}
+{\footnotesize\ttfamily int s21\+\_\+inverse\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{A,  }\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})}
+
+
+
+Matrix inversing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & pointer to matrix \\
+\hline
+{\em result} & pointer to inverted matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\Hypertarget{s21__matrix_8h_a9c2c1fd5d9c5e189f0fb2851fd2a1ee3}\label{s21__matrix_8h_a9c2c1fd5d9c5e189f0fb2851fd2a1ee3} 
+\index{s21\_matrix.h@{s21\_matrix.h}!s21\_mult\_matrix@{s21\_mult\_matrix}}
+\index{s21\_mult\_matrix@{s21\_mult\_matrix}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{s21\_mult\_matrix()}{s21\_mult\_matrix()}}
+{\footnotesize\ttfamily int s21\+\_\+mult\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{A,  }\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{B,  }\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})}
+
+
+
+Matrix multiplication on matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & pointer to matrix \\
+\hline
+{\em B} & pointer to matrix \\
+\hline
+{\em result} & pointer to matrix (mult result) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\Hypertarget{s21__matrix_8h_acd185705783880e5cc7c233329b9d7ef}\label{s21__matrix_8h_acd185705783880e5cc7c233329b9d7ef} 
+\index{s21\_matrix.h@{s21\_matrix.h}!s21\_mult\_number@{s21\_mult\_number}}
+\index{s21\_mult\_number@{s21\_mult\_number}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{s21\_mult\_number()}{s21\_mult\_number()}}
+{\footnotesize\ttfamily int s21\+\_\+mult\+\_\+number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{A,  }\item[{double}]{number,  }\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})}
+
+
+
+Matrix multiplication on number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & pointer to matrix \\
+\hline
+{\em B} & number \\
+\hline
+{\em result} & pointer to matrix (mult result) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\Hypertarget{s21__matrix_8h_aad8337ad12e6dae5bdbbaf1d3b35e140}\label{s21__matrix_8h_aad8337ad12e6dae5bdbbaf1d3b35e140} 
+\index{s21\_matrix.h@{s21\_matrix.h}!s21\_remove\_matrix@{s21\_remove\_matrix}}
+\index{s21\_remove\_matrix@{s21\_remove\_matrix}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{s21\_remove\_matrix()}{s21\_remove\_matrix()}}
+{\footnotesize\ttfamily void s21\+\_\+remove\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{A }\end{DoxyParamCaption})}
+
+
+
+Matrix removing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & pointer to removing matrix \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__matrix_8h_a1942072e4680db31e2854b071b00c3fc}\label{s21__matrix_8h_a1942072e4680db31e2854b071b00c3fc} 
+\index{s21\_matrix.h@{s21\_matrix.h}!s21\_sub\_matrix@{s21\_sub\_matrix}}
+\index{s21\_sub\_matrix@{s21\_sub\_matrix}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{s21\_sub\_matrix()}{s21\_sub\_matrix()}}
+{\footnotesize\ttfamily int s21\+\_\+sub\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{A,  }\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{B,  }\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})}
+
+
+
+Matrixs substruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & pointer to matrix \\
+\hline
+{\em B} & pointer to matrix \\
+\hline
+{\em result} & pointer to matrix (substruction result) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\Hypertarget{s21__matrix_8h_aaa350889d1c45b3b8bb269f9c37e94e7}\label{s21__matrix_8h_aaa350889d1c45b3b8bb269f9c37e94e7} 
+\index{s21\_matrix.h@{s21\_matrix.h}!s21\_sum\_matrix@{s21\_sum\_matrix}}
+\index{s21\_sum\_matrix@{s21\_sum\_matrix}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{s21\_sum\_matrix()}{s21\_sum\_matrix()}}
+{\footnotesize\ttfamily int s21\+\_\+sum\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{A,  }\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{B,  }\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})}
+
+
+
+Add matrixs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & pointer to matrix \\
+\hline
+{\em B} & pointer to matrix \\
+\hline
+{\em result} & pointer to matrix (addition result) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 0 -\/ ok, 1 -\/ incorrect matrix, 2 -\/ calc error 
+\end{DoxyReturn}
+\Hypertarget{s21__matrix_8h_a4a5bbe0e14296f6ec7a91e57ac202ed2}\label{s21__matrix_8h_a4a5bbe0e14296f6ec7a91e57ac202ed2} 
+\index{s21\_matrix.h@{s21\_matrix.h}!s21\_transpose@{s21\_transpose}}
+\index{s21\_transpose@{s21\_transpose}!s21\_matrix.h@{s21\_matrix.h}}
+\doxysubsubsection{\texorpdfstring{s21\_transpose()}{s21\_transpose()}}
+{\footnotesize\ttfamily int s21\+\_\+transpose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{A,  }\item[{\mbox{\hyperlink{s21__matrix_8h_a6121abdcc0c0f5e9a8c42390d3274fdd}{matrix\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})}
+
+
+
+Matrix transpose. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & pointer to matrix \\
+\hline
+{\em result} & pointer to matrix (transpose result) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
